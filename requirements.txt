@@ -1,0 +1,7 @@
+torch
+torchvision
+piq
+requests
+matplotlib
+wandb
+tqdm
