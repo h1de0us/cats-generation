@@ -30,13 +30,18 @@ class CatsDataset(Dataset):
         return image
         
 
+def collate_fn(dataset_items: list):
+    return {
+        "images": torch.stack([item for item in dataset_items])
+    }
+
 def get_dataloaders(data_dir: str, 
                     transform = None,
                     num_workers: int = 4, 
                     batch_size: int = 64, ):
     dataset = CatsDataset(data_dir, transform)
     dataloader = DataLoader(dataset, batch_size=batch_size,
-                                         shuffle=True, num_workers=num_workers)
+                                         shuffle=True, num_workers=num_workers, collate_fn=collate_fn)
     return {
         "train": dataloader
     }
