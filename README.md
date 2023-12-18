@@ -13,5 +13,11 @@ python3 train.py
 
 Also you may use main.ipynb and upload it to kaggle. In this case, you may use it without any extra steps (but you should add the provided dataset as a kaggle input)
 
+To download model weights, follow [this link](https://drive.google.com/file/d/1stGE9soueOgwmCvdBkAd7Qvni3PP2tUs/view?usp=drive_link). Then put the checkpoint into the "saved" folder. 
+You can use the following script to use pretrained model and generate some cats!
+```shell
+python3 generate.py
+```
+
 ### Credits
 This repository is based on an [official pytorch tutorial for DCGAN training](https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html).
