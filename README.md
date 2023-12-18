@@ -1,5 +1,7 @@
 ## Cats generation
 
+[Wandb report link](https://wandb.ai/h1de0us/cats-generation/reports/Cats-generation--Vmlldzo2Mjk0MTcz)
+
 ### Installation guide
 To install all the dependencies, run
 ```shell
